@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78cb465d.chunk.css",
+    "main.js": "/static/js/main.018c06ed.chunk.js",
+    "main.js.map": "/static/js/main.018c06ed.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc51c47b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc51c47b.js.map",
+    "static/css/2.9233ae65.chunk.css": "/static/css/2.9233ae65.chunk.css",
+    "static/js/2.1b04b0f8.chunk.js": "/static/js/2.1b04b0f8.chunk.js",
+    "static/js/2.1b04b0f8.chunk.js.map": "/static/js/2.1b04b0f8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.08a2676a92c40574bde8e0c64a855858.js": "/precache-manifest.08a2676a92c40574bde8e0c64a855858.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9233ae65.chunk.css.map": "/static/css/2.9233ae65.chunk.css.map",
+    "static/css/main.78cb465d.chunk.css.map": "/static/css/main.78cb465d.chunk.css.map",
+    "static/js/2.1b04b0f8.chunk.js.LICENSE.txt": "/static/js/2.1b04b0f8.chunk.js.LICENSE.txt",
+    "static/media/Cinzel.ttf": "/static/media/Cinzel.ed5ec090.ttf",
+    "static/media/Quicksand.ttf": "/static/media/Quicksand.f9baef8a.ttf",
+    "static/media/App.css": "/static/media/thumbnail_Image.d05251c6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc51c47b.js",
+    "static/css/2.9233ae65.chunk.css",
+    "static/js/2.1b04b0f8.chunk.js",
+    "static/css/main.78cb465d.chunk.css",
+    "static/js/main.018c06ed.chunk.js"
+  ]
+}
