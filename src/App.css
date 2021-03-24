@@ -1,0 +1,170 @@
+.App {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-image: url("./images/thumbnail_Image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Cinzel;
+  text-shadow: 0 0 4px black;
+}
+p,
+button,
+input,
+select,
+label,
+option {
+  font-family: Quicksand;
+}
+.top {
+  padding-top: 18%;
+  padding-bottom: 5%;
+}
+#rsvp {
+  max-width: 435px;
+  margin: auto;
+  padding-top: 4rem;
+}
+#svg-object {
+  margin-top: 4em;
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+select,
+option,
+input {
+  text-align: center;
+}
+select:focus,
+option:focus,
+input:focus,
+textarea:focus {
+  border-color: rgba(255, 181, 222, 0) !important;
+  background-color: rgba(255, 181, 222, 0.1) !important;
+  box-shadow: none !important;
+}
+.btn-custom:hover {
+  border-color: rgba(255, 181, 222, 0) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 181, 222, 0.25) !important;
+  transition: all 0.15s ease-in-out;
+  color: rgb(255, 181, 222) !important;
+}
+.iconic {
+  border: none;
+  background: transparent;
+}
+.iconic svg {
+  width: 1.4em;
+  height: 1.4em;
+  transition: all 0.1s ease-in-out;
+}
+.iconic:hover {
+  color: rgb(255, 181, 222) !important;
+  transition: all 0.1s ease-in-out;
+}
+.iconic:hover svg {
+  width: 1.45em;
+  height: 1.45em;
+}
+.download {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #898d91;
+  transition: all 0.1s ease-in-out;
+}
+.download a {
+  color: #898d91;
+}
+.download:hover,
+.download:hover a {
+  border-color: rgb(255, 181, 222);
+  color: rgb(255, 181, 222);
+  height: 34px;
+  width: 34px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+table {
+  border: none;
+  margin: auto;
+}
+.key {
+  font-family: Cinzel;
+}
+.btn-custom {
+  border: #ced4da solid 1px;
+  color: #495057;
+  background-color: white;
+  padding: 10px 40px;
+  width: 100%;
+  font-weight: 600;
+}
+h1 {
+  font-size: 3.15rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.25rem;
+}
+.box {
+  background-color: white;
+  -webkit-box-shadow: -1px -4px 23px 24px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -1px -4px 23px 24px rgba(255, 255, 255, 1);
+  box-shadow: -1px -4px 23px 24px rgba(255, 255, 255, 1);
+}
+.container {
+  max-width: 890px !important;
+  width: 100%;
+}
+.error {
+  color: rgb(63, 0, 92);
+}

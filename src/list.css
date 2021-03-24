@@ -1,0 +1,41 @@
+.othersList {
+  background-color: black;
+  color: white;
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 5px 10px;
+}
+.has:hover .othersList,
+.has:hover .diet {
+  display: block;
+}
+.diet {
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  display: none;
+  font-size: 1rem;
+  max-width: 300px;
+}
+.othersList.has,
+.othersList.not {
+  position: relative;
+}
+.has {
+  background-color: green;
+  color: white;
+}
+.not {
+  background-color: red;
+  color: white;
+}
+tr.Yes {
+  background-color: rgb(226, 252, 226);
+}
+tr.No {
+  background-color: rgb(255, 194, 194);
+}
