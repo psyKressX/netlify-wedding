@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
     "fade-carousel": "^1.1.4",
+    "faunadb": "^4.1.2",
     "fibers": "^5.0.0",
     "jquery": "^3.6.0",
     "knex": "^0.95.1",
