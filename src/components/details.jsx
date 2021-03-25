@@ -19,7 +19,7 @@ export class Details extends Component {
                 <p class="key">Date</p>
               </td>
               <td>
-                <p>June 6th, 2021</p>
+                <p>June 5th, 2021</p>
               </td>
             </tr>
             <tr>
