@@ -67,7 +67,7 @@ const Others = ({ others }) => {
       {others.length > 0 ? (
         <ul className="othersList">
           {others.map((o, idx) => (
-            <li key={idx}>{o.name}</li>
+            <li key={idx}>{o}</li>
           ))}
         </ul>
       ) : null}
