@@ -1,7 +1,6 @@
 [build]
     functions = "functions/"
     publish ="build/"
-    base = "src/"
     command = "CI= npm run build"
     
 [[redirects]]
