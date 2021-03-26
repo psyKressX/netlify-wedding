@@ -6,30 +6,32 @@ export class Details extends Component {
       <div className="container">
         <div className="p-4 mt-4">
           <table>
-            <tr>
-              <td>
-                <p class="key">Where</p>
-              </td>
-              <td>
-                <p>Log Cabin Ranch, 55-57 Rankins Rd, Monbulk VIC 3793</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p class="key">Date</p>
-              </td>
-              <td>
-                <p>June 5th, 2021</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p class="key">Time</p>
-              </td>
-              <td>
-                <p>3pm ceremony start, arrive by 2:45pm</p>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <p className="key">Where</p>
+                </td>
+                <td>
+                  <p>Log Cabin Ranch, 55-57 Rankins Rd, Monbulk VIC 3793</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p className="key">Date</p>
+                </td>
+                <td>
+                  <p>June 5th, 2021</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p className="key">Time</p>
+                </td>
+                <td>
+                  <p>3pm ceremony start, arrive by 2:45pm</p>
+                </td>
+              </tr>
+            </tbody>
           </table>
           <br />
           <br />

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 
 export default function Addition({ set, add, remove, idx, val }) {
-  const [open, setOpen] = useState(false);
   const props = useSpring({
     to: { opacity: 1, overflow: "hidden", height: "auto" },
     from: { opacity: 0, height: 0 },
@@ -20,7 +19,7 @@ export default function Addition({ set, add, remove, idx, val }) {
           onChange={(e) => set(idx, e.target.value)}
           value={val}
         />
-        <button type="button" class="iconic" onClick={() => remove(idx)}>
+        <button type="button" className="iconic" onClick={() => remove(idx)}>
           <AiOutlineMinusCircle />
         </button>
       </div>

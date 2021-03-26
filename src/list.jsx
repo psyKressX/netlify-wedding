@@ -42,9 +42,9 @@ export default function List() {
           </tr>
         </thead>
         <tbody>
-          {list.map((guest) => (
-            <tr key={guest.id} className={guest.attending ? "Yes" : "No"}>
-              <td>{(guest.firstName, " ", guest.lastName)}</td>
+          {list.map((guest, idx) => (
+            <tr key={idx} className={guest.attending ? "Yes" : "No"}>
+              <td>{guest.firstName + " " + guest.lastName}</td>
               <td>{guest.attending ? "Yes" : "No"}</td>
               <td>{guest.selection}</td>
               <td>{guest.email}</td>

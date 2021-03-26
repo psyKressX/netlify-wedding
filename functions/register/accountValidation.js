@@ -27,7 +27,7 @@ const valid = function (x) {
   formErrors.lastName = min3max15NN(x.lastName);
   formErrors.attending = x.attending == null ? "feild required" : null;
 
-  if (x.attending == "false" || x.attending == null) {
+  if (x.attending == false || x.attending == null) {
     return formErrors;
   } else {
     formErrors.email =

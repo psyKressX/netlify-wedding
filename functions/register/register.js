@@ -18,7 +18,8 @@ exports.handler = async (req, context) => {
         failed = true;
       }
     }
-    if (failed) return { statusCode: 400, formErrors };
+    console.log(formErrors);
+    if (failed) return { statusCode: 400, body: JSON.stringify(formErrors) };
     body.form.others = body.others;
     console.log(body.form);
     const res = await client.query(

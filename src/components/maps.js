@@ -45,7 +45,7 @@ const Slide = ({ image }) => {
       <div>
         <img style={imageStyle} src={image} alt="" />
       </div>
-      <button class="download">
+      <button className="download">
         <a style={{ lineHeight: "0.2em" }} href={image} download>
           <AiOutlineDownload />
         </a>

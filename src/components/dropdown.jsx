@@ -1,7 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { Collapse } from "react-bootstrap";
 import Addition from "./addition";
 import { AiOutlinePlusCircle } from "react-icons/ai";
+
+const keyVal = {
+  firstName: "first Name",
+  lastName: "Last Name",
+  attending: "Attending Status",
+  email: "Email",
+  selection: "Plans",
+};
 
 export default function Drop() {
   const [open1, setOpen1] = useState(false);
@@ -23,13 +31,17 @@ export default function Drop() {
     sent: false,
   });
   const [others, setOthers] = useState([]);
-  const [accom, setAccom] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     let preForm = { ...form };
     preForm[name] = value;
-
+    setForm(preForm);
+  };
+  const handleBool = (e) => {
+    const { name, value } = e.target;
+    let preForm = { ...form };
+    preForm[name] = JSON.parse(value);
     setForm(preForm);
   };
 
@@ -72,6 +84,13 @@ export default function Drop() {
         console.log("this is error", err);
       });
   };
+  let err = "";
+  Object.keys(formErrors).forEach((e) => {
+    if (formErrors[e]) {
+      err = err.length > 0 ? err + ", " + keyVal[e] : err + " " + keyVal[e];
+    }
+  });
+
   return (
     <div id="rsvp" className=" pb-2">
       {!formErrors.success && (
@@ -130,7 +149,7 @@ export default function Drop() {
                 <select
                   name="attending"
                   onChange={(e) => {
-                    handleChange(e);
+                    handleBool(e);
                     setOpen2(JSON.parse(e.target.value));
                   }}
                   defaultValue="DEFAULT"
@@ -214,7 +233,7 @@ export default function Drop() {
                     <div>
                       <button
                         type="button"
-                        class="iconic"
+                        className="iconic"
                         onClick={() => setOthers([...others, ""])}
                       >
                         <AiOutlinePlusCircle />
@@ -223,6 +242,12 @@ export default function Drop() {
                   </div>
                 </div>
               </Collapse>
+
+              {err.length > 0 && (
+                <div>
+                  <small className="error">Errors at {err}</small>
+                </div>
+              )}
 
               <div className="form-group pb-2 pt-4 d-flex justify-content-end">
                 <button className="btn-custom" action="onSubmit">

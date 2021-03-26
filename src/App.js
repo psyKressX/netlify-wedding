@@ -22,6 +22,29 @@ function App() {
 const Main = () => {
   return (
     <div className="App">
+      <div
+        style={{
+          position: "absolute",
+          height: "100vh",
+          width: "100%",
+          zIndex: "-1",
+          display: "flex",
+          alignItems: "center",
+          overflow: "hidden",
+        }}
+      >
+        <img
+          src={process.env.PUBLIC_URL + "thumbnail_image.jpg"}
+          style={{
+            minHeight: "100vh",
+            minWidth: "100vw",
+            margin: "auto",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </div>
       <div style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
         <Header />
         <div className="box">
