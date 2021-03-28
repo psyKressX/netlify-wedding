@@ -37,7 +37,7 @@ const Main = () => {
           src={process.env.PUBLIC_URL + "thumbnail_image.jpg"}
           style={{
             minHeight: "100vh",
-            minWidth: "100vw",
+            minWidth: "100%",
             margin: "auto",
             width: "100%",
             height: "100%",

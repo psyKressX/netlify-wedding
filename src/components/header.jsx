@@ -14,7 +14,7 @@ export class Header extends Component {
           </h3>
         </div>
         <div className="p-4">
-          <h4 style={white}>June 6th, 2021</h4>
+          <h4 style={white}>June 5th, 2021</h4>
           <h4 style={white}>
             At the{" "}
             <a
