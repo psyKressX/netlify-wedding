@@ -43,6 +43,7 @@ const Main = () => {
             height: "100%",
             objectFit: "cover",
           }}
+          loading="eager"
         />
       </div>
       <div style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}>
