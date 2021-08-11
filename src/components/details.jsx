@@ -20,7 +20,7 @@ export class Details extends Component {
                   <p className="key">Date</p>
                 </td>
                 <td>
-                  <p>July 31st, 2021</p>
+                  <p>October 31st, Wednesday, 2021</p>
                 </td>
               </tr>
               <tr>
@@ -36,17 +36,19 @@ export class Details extends Component {
           <br />
           <br />
           <p>
-            Since COVID ruined our original wedding date for the 5th of June, we have been offered the new date of the 31st of July. We are hoping that everyone can still make it. If you could please RSVP once again incase your plans have changed. Same time, same{" "}
+            Third time lucky! We are hoping that everyone can still make it
+            deespite it beind a weekday. If you could please RSVP once again
+            incase your plans have changed. Same time, same{" "}
             <a
               style={{ color: "#a15750" }}
               href="https://goo.gl/maps/bysyisDSeJqYC4Ae9"
               target="_blank"
               rel="noopener noreferrer"
             >
-                 place.
-                        
-            </a>{" "}</p>
-            <p>
+              place.
+            </a>{" "}
+          </p>
+          <p>
             The ranch has complimentary accommodation for up to 70 guests (BYO
             blankets, pillows &#38; sheets) so you can celebrate late into the
             night with us and wake for a camp-style breakfast in the morning.
