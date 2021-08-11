@@ -37,7 +37,7 @@ export class Details extends Component {
           <br />
           <p>
             Third time lucky! We are hoping that everyone can still make it
-            deespite it beind a weekday. If you could please RSVP once again
+            despite it being a weekday. If you could please RSVP once again
             incase your plans have changed. Same time, same{" "}
             <a
               style={{ color: "#a15750" }}
