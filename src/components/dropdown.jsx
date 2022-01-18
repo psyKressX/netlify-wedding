@@ -191,7 +191,10 @@ export default function Drop() {
                   </div>
                   <div>
                     <label className="mr-2">Dietary requirements?</label>
-                    <input type="checkbox" onChange={setHasDiet((x) => !x)} />
+                    <input
+                      type="checkbox"
+                      onChange={(e) => setHasDiet((x) => !x)}
+                    />
                   </div>
                   {hasDiet ? (
                     <div className="p-2 form-group mx-sm-3">
