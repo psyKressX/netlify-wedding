@@ -14,6 +14,7 @@ const keyVal = {
 export default function Drop() {
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [hasDiet, setHasDiet] = useState(false);
   const [form, setForm] = useState({
     firstName: null,
     lastName: null,
@@ -82,6 +83,7 @@ export default function Drop() {
           setOpen2(false);
           ref.current.scrollIntoView({
             behavior: "smooth",
+            block: "center",
           });
         }
       })
@@ -187,15 +189,20 @@ export default function Drop() {
                       </div>
                     )}
                   </div>
-                  <div className="p-2 form-group mx-sm-3">
+                  <div>
                     <label className="mr-2">Dietary requirements?</label>
-                    <textarea
-                      type="text"
-                      name="diet"
-                      onChange={handleChange}
-                      className="form-control"
-                    ></textarea>
+                    <input type="checkbox" onChange={setHasDiet((x) => !x)} />
                   </div>
+                  {hasDiet ? (
+                    <div className="p-2 form-group mx-sm-3">
+                      <textarea
+                        type="text"
+                        name="diet"
+                        onChange={handleChange}
+                        className="form-control"
+                      ></textarea>
+                    </div>
+                  ) : null}
                   <br />
                   <p className="error">
                     For our COVIDSafe plan, we are required to inform the venue
