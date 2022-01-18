@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Collapse } from "react-bootstrap";
 import Addition from "./addition";
 import { AiOutlinePlusCircle } from "react-icons/ai";
@@ -31,6 +31,8 @@ export default function Drop() {
     sent: false,
   });
   const [others, setOthers] = useState([]);
+
+  const ref = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -78,6 +80,9 @@ export default function Drop() {
           setFormErrors(preForm);
           setOpen1(false);
           setOpen2(false);
+          ref.current.scrollIntoView({
+            behavior: "smooth",
+          });
         }
       })
       .catch((err) => {
@@ -101,7 +106,7 @@ export default function Drop() {
 
       <div>
         {formErrors.success && (
-          <div>
+          <div ref={ref}>
             <p
               className="pt-4"
               style={{ fontFamily: "Cinzel", fontSize: "1.7rem" }}
