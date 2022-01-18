@@ -20,7 +20,7 @@ export class Details extends Component {
                   <p className="key">Date</p>
                 </td>
                 <td>
-                  <p>October 13th, Wednesday, 2021</p>
+                  <p>May the 4th, Wednesday, 2021</p>
                 </td>
               </tr>
               <tr>
@@ -36,7 +36,7 @@ export class Details extends Component {
           <br />
           <br />
           <p>
-            Third time lucky! We are hoping that everyone can still make it
+            Fourth? time lucky! We are hoping that everyone can still make it
             despite it being a weekday. If you could please RSVP once again
             incase your plans have changed. Same time, same{" "}
             <a
