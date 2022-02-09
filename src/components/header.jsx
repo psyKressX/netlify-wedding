@@ -14,14 +14,14 @@ export class Header extends Component {
           </h3>
         </div>
         <div className="p-4">
-          <h4 style={white}>October 13th 2021</h4>
+          <h4 style={white}>May the 4th 2022</h4>
           <h4 style={white}>
             At the{" "}
             <a
               style={{
                 color: "white",
                 fontWeight: "500",
-                textShadow: "0 0 6px #ff008e "
+                textShadow: "0 0 6px #ff008e ",
               }}
               href="https://goo.gl/maps/bysyisDSeJqYC4Ae9"
               target="_blank"

@@ -49,9 +49,15 @@ export class Details extends Component {
             </a>{" "}
           </p>
           <p>
-            The ranch has complimentary accommodation for up to 70 guests (BYO
-            blankets, pillows &#38; sheets) so you can celebrate late into the
-            night with us and wake for a camp-style breakfast in the morning.
+            Since it is Starwars day, feel free to bring either a Lightsaber,
+            helmet or mask to go with your outfit.
+          </p>
+          <p>
+            Additionally, children are invited to come along but please include
+            them in your RSVP in the "Who is coming with you" section. The ranch
+            has complimentary accommodation for up to 70 guests (BYO blankets,
+            pillows &#38; sheets) so you can celebrate late into the night with
+            us and wake for a camp-style breakfast in the morning.
           </p>
         </div>
       </div>
